@@ -36,12 +36,14 @@
 
             .container {
                 display: grid;
-                grid-template-columns: 50px 50px 50px 50px;
+                grid-template-columns: 20% auto auto 20%;
                 grid-template-rows: auto;
                 grid-template-areas: 
                                     "header1 . . header2"
                                     ". main main ."
-                                    "footer1 footer2 footer3 footer4";
+                                    "footer1 . . ." 
+                                    "footer2 footer2 footer2 footer2" 
+                                    ". footer3 footer4 .";
             }
 
         </style>
@@ -51,19 +53,19 @@
 
     <body>
         <div class="container">
-            <div class="item-a">Upper right</div>
+            <div class="item-a">About Store</div>
 
-            <div class="item-b">Upper left</div>
+            <div class="item-b">Gmail Images Sign In</div>
             
-            <div class="item-c">Body</div>
+            <div class="item-c">GOOGLE</div>
 
-            <div class="item-d">Footer 1</div>
+            <div class="item-d">United Kingdom</div>
 
-            <div class="item-e">Footer 2</div>
+            <div class="item-e">Carbon neutral since 2007</div>
 
-            <div class="item-f">Footer 3</div>
+            <div class="item-f">Advertising Business How Search Works</div>
 
-            <div class="item-g">Footer 4</div>
+            <div class="item-g">Privacy Terms Settings</div>
         </div>
   
     </body>
