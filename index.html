@@ -1,18 +1,71 @@
 <!DOCTYPE html>
+
 <html>
     <head>
         <style>
-
             
+            .item-a {
+                grid-area: header1;
+                
+            }
+
+            .item-b {
+                grid-area: header2;
+            }
+
+            .item-c {
+                grid-area: main;
+            }
+
+
+            .item-d {
+                grid-area: footer1;
+            }
+
+            .item-e {
+                grid-area: footer2;
+            }
+
+            .item-f {
+                grid-area: footer3;
+            }
+
+            .item-g {
+                grid-area: footer4;
+            }
+
+            .container {
+                display: grid;
+                grid-template-columns: 50px 50px 50px 50px;
+                grid-template-rows: auto;
+                grid-template-areas: 
+                                    "header1 . . header2"
+                                    ". main main ."
+                                    "footer1 footer2 footer3 footer4";
+            }
+
         </style>
 
 
     </head>
 
     <body>
+        <div class="container">
+            <div class="item-a">Upper right</div>
 
+            <div class="item-b">Upper left</div>
+            
+            <div class="item-c">Body</div>
 
+            <div class="item-d">Footer 1</div>
 
+            <div class="item-e">Footer 2</div>
+
+            <div class="item-f">Footer 3</div>
+
+            <div class="item-g">Footer 4</div>
+        </div>
+  
     </body>
 
     <footer>
